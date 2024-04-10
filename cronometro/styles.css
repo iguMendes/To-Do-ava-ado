@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+  
+  body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-image: url(/imgsCrono/vpwave.jpg);
+    background-size: cover;
+}
+
+  .labels{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .labels > div {
+    margin-bottom: 15px; 
+}
+  
+  .cronometro {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid blueviolet;
+    width: 320px;
+    height: 320px;
+    margin-top: 20px;
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color:  rgba(198, 87, 241, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.temporizador {
+  align-self: flex;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+#horas, #minutos, #segundos{
+  margin-bottom: 7px;
+  color: black;
+}
+
+input[type="number"]{
+  width: 50px; /* Defina o tamanho desejado */
+  color: black;
+}
+.btntemporizador{
+  width: 100px;
+  color: rgb(132, 76, 146);
+  border-radius: 10px;
+}
+.btnParar{
+  width: 100px;
+  color: rgb(132, 76, 146);
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
+
+button[type="submit"] {
+  position: relative; 
+ left: 18px;
+}
+
+
+.horas, .minutos,.segundos{
+  border-bottom:  1px solid #ccc;
+}
+
+.horas{
+  padding-left: 23px;
+}
+.minutos{
+  padding-left: 9px;
+}
+
+.segundos{
+  padding-right: 10px;
+}

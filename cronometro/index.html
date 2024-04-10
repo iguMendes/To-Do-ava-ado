@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+    <!-- div cronômetro compõe os elementos que mostra os botões -->
+    <div class="cronometro">
+        <h1 class="temporizador">Temporizador Personalizado</h1>
+        <form id="temporizador-form">
+            <div class="labels">
+                <div class="horas">
+                <label for="horas">Horas:</label>
+                <input type="number" id="horas" name="horas" min="0">
+                </div>
+                <div class="minutos">
+                <label for="minutos">Minutos:</label>
+                <input type="number" id="minutos" name="minutos" min="0" max="59">
+                </div>
+                <div class="segundos">
+                <label for="segundos">Segundos:</label>
+                <input type="number" id="segundos" name="segundos" min="0" max="59">
+             </div>
+                <button type="submit" class="btntemporizador">Iniciar<br>Temporizador</button>
+                <button type="submit" id="parar" class="btnParar">Parar<br>Temporizador</button>
+        </form>
+    </div>
+    <div id="temporizador-contagem"></div> <!-- Elemento onde a contagem será exibida -->
+    </div>
+
+    
